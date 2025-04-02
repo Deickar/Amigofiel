@@ -1,15 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="stylesformulario.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="stylesformulario.css" />
+    <link href="./style.css" rel="stylesheet" />
 </head>
+
 <body>
-    <div class="container mt-5">
+    <!---Barra de navegacion-->
+    <nav class="navbar navbar-expand-lg navbar-scroll">
+        <div class="container">
+            <a href="./index.html"><img src="./img/logo.png" height="90" alt="" loading="lazy" /></a>
+            <!--Menu hamburguesa--->
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!----->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">Incio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./adoptcion.html">Adopcion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./formulario.html">
+                            Formalario de adoptcións</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./testimonios.html">Testimonios</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!---Funal de navbar-->
+    <div class="container-fluid mt-5">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
@@ -19,7 +52,8 @@
                             <div class="row mb-3">
                                 <div class="col-md-8">
                                     <label for="nombre" class="form-label">Nombre Completo</label>
-                                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre completo">
+                                    <input type="text" class="form-control" id="nombre"
+                                        placeholder="Ingrese su nombre completo">
                                 </div>
                                 <div class="col-md-4">
                                     <label for="edad" class="form-label">Edad</label>
@@ -28,26 +62,31 @@
                             </div>
                             <div class="mb-3">
                                 <label for="direccion" class="form-label">Dirección</label>
-                                <input type="text" class="form-control" id="direccion" placeholder="Ingrese su dirección">
+                                <input type="text" class="form-control" id="direccion"
+                                    placeholder="Ingrese su dirección">
                             </div>
                             <div class="row mb-3">
                                 <div class="col-md-6">
                                     <label for="ocupacion" class="form-label">Ocupación</label>
-                                    <input type="text" class="form-control" id="ocupacion" placeholder="Ingrese su ocupación">
+                                    <input type="text" class="form-control" id="ocupacion"
+                                        placeholder="Ingrese su ocupación">
                                 </div>
                                 <div class="col-md-6">
                                     <label for="correo" class="form-label">Correo Electrónico</label>
-                                    <input type="email" class="form-control" id="correo" placeholder="Ingrese su correo electrónico">
+                                    <input type="email" class="form-control" id="correo"
+                                        placeholder="Ingrese su correo electrónico">
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <div class="col-md-6">
                                     <label for="celular" class="form-label">Número de Celular</label>
-                                    <input type="text" class="form-control" id="celular" placeholder="Ingrese su número de celular">
+                                    <input type="text" class="form-control" id="celular"
+                                        placeholder="Ingrese su número de celular">
                                 </div>
                                 <div class="col-md-6">
                                     <label for="casa" class="form-label">Número de Casa</label>
-                                    <input type="text" class="form-control" id="casa" placeholder="Ingrese su número de casa">
+                                    <input type="text" class="form-control" id="casa"
+                                        placeholder="Ingrese su número de casa">
                                 </div>
                             </div>
                             <div class="mb-3">
@@ -62,11 +101,13 @@
                             <div class="row mb-3">
                                 <div class="col-md-4">
                                     <label for="referencia1" class="form-label">Nombre</label>
-                                    <input type="text" class="form-control" id="referencia1" placeholder="Nombre de referencia">
+                                    <input type="text" class="form-control" id="referencia1"
+                                        placeholder="Nombre de referencia">
                                 </div>
                                 <div class="col-md-4">
                                     <label for="telefono1" class="form-label">Teléfono</label>
-                                    <input type="text" class="form-control" id="telefono1" placeholder="Teléfono de referencia">
+                                    <input type="text" class="form-control" id="telefono1"
+                                        placeholder="Teléfono de referencia">
                                 </div>
                                 <div class="col-md-4">
                                     <label for="parentesco1" class="form-label">Parentesco</label>
@@ -75,10 +116,12 @@
                             </div>
                             <div class="row mb-3">
                                 <div class="col-md-4">
-                                    <input type="text" class="form-control" id="referencia2" placeholder="Nombre de referencia">
+                                    <input type="text" class="form-control" id="referencia2"
+                                        placeholder="Nombre de referencia">
                                 </div>
                                 <div class="col-md-4">
-                                    <input type="text" class="form-control" id="telefono2" placeholder="Teléfono de referencia">
+                                    <input type="text" class="form-control" id="telefono2"
+                                        placeholder="Teléfono de referencia">
                                 </div>
                                 <div class="col-md-4">
                                     <input type="text" class="form-control" id="parentesco2" placeholder="Parentesco">
@@ -86,10 +129,12 @@
                             </div>
                             <div class="row mb-3">
                                 <div class="col-md-4">
-                                    <input type="text" class="form-control" id="referencia3" placeholder="Nombre de referencia">
+                                    <input type="text" class="form-control" id="referencia3"
+                                        placeholder="Nombre de referencia">
                                 </div>
                                 <div class="col-md-4">
-                                    <input type="text" class="form-control" id="telefono3" placeholder="Teléfono de referencia">
+                                    <input type="text" class="form-control" id="telefono3"
+                                        placeholder="Teléfono de referencia">
                                 </div>
                                 <div class="col-md-4">
                                     <input type="text" class="form-control" id="parentesco3" placeholder="Parentesco">
@@ -107,14 +152,17 @@
                             </div>
                             <div class="mb-3">
                                 <label for="hijos" class="form-label">Número de Hijos</label>
-                                <input type="number" class="form-control" id="hijos" placeholder="Ingrese el número de hijos">
+                                <input type="number" class="form-control" id="hijos"
+                                    placeholder="Ingrese el número de hijos">
                             </div>
                             <div class="mb-3">
                                 <label for="ingresos" class="form-label">Ingresos Mensuales Aprox.</label>
-                                <input type="text" class="form-control" id="ingresos" placeholder="Ingrese su ingreso mensual">
+                                <input type="text" class="form-control" id="ingresos"
+                                    placeholder="Ingrese su ingreso mensual">
                             </div>
                             <div class="mb-6">
-                                <label class="form-label">¿Alguien en su familia es alérgico a los animales o tiene asma?</label>
+                                <label class="form-label">¿Alguien en su familia es alérgico a los animales o tiene
+                                    asma?</label>
                                 <select class="form-select" id="alergias_asma">
                                     <option value="no">No</option>
                                     <option value="asma">Sí</option>
@@ -124,11 +172,13 @@
                             <div class="row mb-3">
                                 <div class="col-md-8">
                                     <label for="dueno_inmueble" class="form-label">Nombre del Dueño del Inmueble</label>
-                                    <input type="text" class="form-control" id="dueno_inmueble" placeholder="Ingrese el nombre del dueño">
+                                    <input type="text" class="form-control" id="dueno_inmueble"
+                                        placeholder="Ingrese el nombre del dueño">
                                 </div>
                                 <div class="col-md-4">
                                     <label for="telefono_dueno" class="form-label">Teléfono</label>
-                                    <input type="text" class="form-control" id="telefono_dueno" placeholder="Ingrese el teléfono del dueño">
+                                    <input type="text" class="form-control" id="telefono_dueno"
+                                        placeholder="Ingrese el teléfono del dueño">
                                 </div>
                             </div>
                             <div class="mb-3">
@@ -141,31 +191,69 @@
                                         <option value="alquilado">Alquilando</option>
                                     </select>
                                 </div>
-                            <div class="mb-3">
-                                <label class="form-label">El lugar donde vive posee:</label>
-                                <div class="d-flex gap-3">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="patio">
-                                        <label class="form-check-label" for="patio">Patio</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="jardin">
-                                        <label class="form-check-label" for="jardin">Jardín</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="terraza">
-                                        <label class="form-check-label" for="terraza">Terraza</label>
+                                <div class="mb-3">
+                                    <label class="form-label">El lugar donde vive posee:</label>
+                                    <div class="d-flex gap-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="patio">
+                                            <label class="form-check-label" for="patio">Patio</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="jardin">
+                                            <label class="form-check-label" for="jardin">Jardín</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="terraza">
+                                            <label class="form-check-label" for="terraza">Terraza</label>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary w-100 btn-p">Enviar</button>
+                                <button type="submit" class="btn btn-primary w-100 btn-p">Enviar</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!--Footer comienzo-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col">
+                    <div class="footer-brand"><u>Redes sociales</u></div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <br />
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer-brand"><u>Whatsapp</u></div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-whatsapp">
+                                <h3>5555-5555</h3>
+                            </i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer-brand"><u>Direccion</u></div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15441.519985558463!2d-90.59764751284177!3d14.63435810000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a1495a330c1d%3A0x6a68e35b88e73342!2sSaving%20Animals%20Guatemala!5e0!3m2!1ses-419!2sgt!4v1743533078539!5m2!1ses-419!2sgt"
+                        width="450" height="90" style="border: 0" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                © 2025 Amigo Fiel. Tiene todos los derecho reservados.
+            </div>
+        </div>
+    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
 </body>
+
 </html>
