@@ -1,0 +1,133 @@
+body {
+  font-family: 'Poppins', sans-serif; /*Uso de letra poppins en el body*/
+  font-size: 13px; /*tamaño de letra*/
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /*para que se adapte al 100% de la pantalla*/
+  background-color: #f0f0f0;
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centrar horizontalmente */
+  gap: 50px; /* Espacio entre imágenes */
+}
+
+/*secciones de adopciones*/
+.section {
+  width: 100%; /* Ajusta el ancho */
+  text-align: center;
+  background-color: #F2C12E;
+}
+
+.section-title {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Contenedor de imágenes */
+.image-wrapper {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  width: 500px;
+}
+
+.image-container {
+  position: relative;
+  width: 500px; /* Ajusta según sea necesario */
+  margin: 0;
+  padding: 0;
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+  border-radius: 10px; /* Opcional */
+}
+
+/* Overlay */
+.image-container::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: #dff7039c; /* Color del overlay */
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 1; /*en la posicion uno para mostrarse*/
+}
+
+.image-container:hover::after {
+  opacity: 1; /* Muestra el overlay al pasar el mouse */
+}
+
+/* Texto dentro del overlay */
+.overlay-text {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 2; /*en la posicion dos para que las letras queden adelante del overlay*/
+}
+
+.image-container:hover .overlay-text {
+  opacity: 1; /*al finalizar la transición que queden visibles tanto el texto y el overlay*/
+}
+
+/* Bloque de información */
+.info-block {
+  background: #333;
+  color: white;
+  padding: 15px;
+  margin-top: 5px;
+  border-radius: 8px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box; /*evita que los elementos se agranden al cambiar el tamaño de pantalla*/
+}
+
+/*Efecto de corazon en el boton*/
+@keyframes heartbeat {
+  0% { transform: scale(1); } /*al inicio el boton esta en tamaño normal*/
+  50% { transform: scale(1.1); } /* Aumenta un poco de tamaño */
+  100% { transform: scale(1); } /*al final el boton vuele al tamaño noral*/
+}
+
+/* Estilos del botón */
+.adopt-button {
+  display: inline-block;
+  background: #F88D25;
+  color: white;
+  padding: 10px 15px;
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 13px;
+  transition: 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 5px #F88D25;
+}
+
+/* Activar el efecto latido en hover */
+.adopt-button:hover {
+  background: #f25c05;
+  box-shadow: 0 0 15px #F88D25, 0 0 25px #F88D25;
+  animation: heartbeat 0.8s infinite; /* Efecto de latido infinito de 0.8 segundos de duracion*/
+}

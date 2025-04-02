@@ -1,0 +1,20 @@
+body {
+    background-color: #f8f9fa;
+}
+.card {
+    background-image: url('img/fondoadopcion.jpg');
+    background-size: cover; /*cubre completamente el formulario*/
+    background-position: center;
+    background-repeat: no-repeat; /*no se repite la imagen*/
+}
+.btn-p{
+    background-color: #f88d25; /* fondo del naranja */
+            color: white;
+            border: none;
+            cursor: pointer; /*la transicion va a darse cuando el cursor este en el boton*/
+            border-radius: 5px;
+            transition: background-color 0.3s ease; /* transicion de 0.3 segundos para cambiar de color*/
+}
+.btn-p:hover{
+    background-color: #F25C05; /* Naranja más oscuro el color de la transición*/
+}
