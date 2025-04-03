@@ -144,3 +144,69 @@ body {
   padding-top: 20px;
   border-top: 1px solid #eee;
 }
+
+
+
+
+
+/*ESTILOS DE TESTIMONIOS*/
+.row{
+  padding: 5px;
+  border: 6px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
+  background-color: #f2ca52;
+}
+
+.icono-usuario {
+  font-size: 4.5rem;
+  color: #f25c05;
+  background-color: none;
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+
+.iconos-redes {
+  font-size: 1.5rem;
+  color: #f25c05;
+  background-color: none;
+  padding: 4px 9.5px;
+  border-radius: 50%;
+  justify-content: space-evenly ;
+}
+
+/*hover*/
+.container:hover{
+  color: white;
+  background-color: black;
+}
+
+.row:hover{
+  color: white;
+  background-color: #590202;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
