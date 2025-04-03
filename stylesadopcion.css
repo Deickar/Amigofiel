@@ -9,6 +9,7 @@ body {
   flex-direction: column; /* Asegura que los elementos se apilen en columna */
 }
 
+
 .container1 {
   flex: 1; /* Hace que el contenido ocupe el espacio disponible */
   display: flex;
@@ -18,6 +19,7 @@ body {
 }
 
 /*secciones de adopciones*/
+
 .section {
   width: 100%; /* Ajusta el ancho */
   text-align: center;
@@ -230,6 +232,12 @@ body {
   width: 100%;
 }
 
+.footer-brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #bf1304;
+  margin-bottom: 15px;
+}
 
 .social-links {
   margin: 20px 0;
