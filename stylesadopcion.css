@@ -1,5 +1,5 @@
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 13px;
   margin: 0;
   padding: 0;
@@ -8,7 +8,6 @@ body {
   display: flex;
   flex-direction: column; /* Asegura que los elementos se apilen en columna */
 }
-
 
 .container1 {
   flex: 1; /* Hace que el contenido ocupe el espacio disponible */
@@ -23,7 +22,7 @@ body {
 .section {
   width: 100%; /* Ajusta el ancho */
   text-align: center;
-  background-color: #F2C12E;
+  background-color: #f2c12e;
 }
 
 .section-title {
@@ -36,7 +35,7 @@ body {
 /* Contenedor de imágenes */
 .image-wrapper {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
   width: 500px;
 }
@@ -105,15 +104,21 @@ body {
 
 /*Efecto de corazon en el boton*/
 @keyframes heartbeat {
-  0% { transform: scale(1); } /*al inicio el boton esta en tamaño normal*/
-  50% { transform: scale(1.1); } /* Aumenta un poco de tamaño */
-  100% { transform: scale(1); } /*al final el boton vuele al tamaño noral*/
+  0% {
+    transform: scale(1);
+  } /*al inicio el boton esta en tamaño normal*/
+  50% {
+    transform: scale(1.1);
+  } /* Aumenta un poco de tamaño */
+  100% {
+    transform: scale(1);
+  } /*al final el boton vuele al tamaño noral*/
 }
 
 /* Estilos del botón */
 .adopt-button {
   display: inline-block;
-  background: #F88D25;
+  background: #f88d25;
   color: white;
   padding: 10px 15px;
   margin-top: 10px;
@@ -124,16 +129,15 @@ body {
   transition: 0.3s ease-in-out;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 0 5px #F88D25;
+  box-shadow: 0 0 5px #f88d25;
 }
 
 /* Activar el efecto latido en hover */
 .adopt-button:hover {
   background: #f25c05;
-  box-shadow: 0 0 15px #F88D25, 0 0 25px #F88D25;
+  box-shadow: 0 0 15px #f88d25, 0 0 25px #f88d25;
   animation: heartbeat 0.8s infinite; /* Efecto de latido infinito de 0.8 segundos de duracion*/
 }
-
 
 /*INICIO CODIGO DE NAVBAR Y DE FOOTER*/
 
@@ -280,4 +284,3 @@ body {
   padding-top: 20px;
   border-top: 1px solid #eee;
 }
-
