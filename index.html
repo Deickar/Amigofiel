@@ -15,14 +15,19 @@
     />
   </head>
 
-  <body>
-    <!---Barra de navegacion-->
+  <body id="top">
+    <div id="loader">
+      <img src="./img/logo.png" alt="Logo" class="loader-logo" />
+      <p class="loader-text">Cargando...</p>
+    </div>
+
+    <!---Barra de navegación-->
     <nav class="navbar navbar-expand-lg navbar-scroll">
       <div class="container">
         <a href="./index.html"
           ><img src="./img/logo.png" height="90" alt="" loading="lazy"
         /></a>
-        <!--Menu hamburguesa--->
+        <!--Menu hamburguesa-->
         <button
           type="button"
           class="navbar-toggler"
@@ -31,135 +36,134 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!----->
+
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="./index.html"
-                >Incio</a
+                >Inicio</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./adopcion.html"
-                >Adopcion</a
+              <a class="nav-link" href="./adopcion.html">Adopción</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./formulario.html"
+                >Formulario de adopción</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./formulario.html">
-                Formulario de adoptcións</a
-              >
+              <a class="nav-link" href="./testimonios.html">Testimonios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./testimonios.html"
-                >Testimonios</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./nosotros.html"
-                >Nosotros</a
-              >
+              <a class="nav-link" href="./nosotros.html">Nosotros</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!---FInal de barra de navegacion-->
-    <!--Seccion principal de pagina web-->
-    <!---parrafo de bienvenidos-->
+
+    <!-- Sección principal -->
     <br />
     <div class="p-1 border container-fluid bg-color animate fadeInLeft three">
       <div
-        class="texto-principal d-flex flex-column flex-md-row align-items-center gap-3"
+        class="texto-principal row align-items-center gx-3 gy-4 flex-column-reverse flex-md-row"
       >
+        <!-- Texto -->
+        <div class="col-12 col-md-6">
+          <section class="texto-principal px-2 px-md-4">
+            <h3 class="text-center"><u>Bienvenidos a Amigo Fiel!</u> 🐾</h3>
+            <p class="lead text-justify">
+              En nuestro rincón de esperanza y segundas oportunidades, cada
+              colita que mueve y cada ronroneo suave tiene una historia que
+              contar...<br />
+              ¡Empieza tu búsqueda hoy y encuentra a tu
+              <a href="./testimonios.html">#AmigoFiel!</a>
+            </p>
+          </section>
+        </div>
+
         <!-- Imagen -->
-        <div class="flex-shrink-0 text-center anumate fadeInLeft three">
+        <div class="col-12 col-md-6 text-center">
           <img
             src="./img/pata.jpg"
             alt="Mascota adorable"
-            class="img-fluid rounded"
-            style="max-width: 400px"
+            class="img-fluid rounded mx-auto"
+            style="max-width: 100%; height: auto"
           />
         </div>
-
-        <!-- Texto -->
-        <section class="texto-principal">
-          <h3 class="text-center"><u>Bienvenidos a Amigo Fiel!</u> 🐾</h3>
-          <p class="lead">
-            En nuestro rincón de esperanza y segundas oportunidades, cada colita
-            que mueve y cada ronroneo suave tiene una historia que contar. Aquí,
-            los perros y gatos abandonados encuentran un refugio lleno de amor
-            mientras esperan a su familia ideal… ¡quizás esa seas tú! Creemos
-            que adoptar es un acto de amor y responsabilidad, pero también el
-            inicio de una amistad inquebrantable. Ya sea un cachorro juguetón,
-            un gato curioso o un peludo maduro lleno de sabiduría, cada uno
-            tiene algo único para ofrecer: lealtad, compañía y un corazón que
-            late con gratitud. ¿Listo para cambiar una vida? Explora nuestras
-            historias de patitas peludas, conoce a tus posibles compañeros y
-            descubre cómo un pequeño gesto puede llenar tu hogar de ronroneos,
-            lamidas y momentos inolvidables. Porque en Amigo Fiel, no solo
-            rescatamos mascotas… ¡rescatamos alegrías! Gracias por ser parte de
-            esta misión. Juntos, podemos escribir finales felices. 🐶❤️🐱
-            <br />
-            ¡Empieza tu búsqueda hoy y encuentra a tu
-            <a href="./testimonios.html">#AmigoFiel!</a>
-          </p>
-        </section>
       </div>
     </div>
+
     <br />
-    <div class="p-1 border container-fluid bg-color animate fadeInLeft three">
-      <section class="texto-principal align-items-center text-center">
-        <img src="./img/logo.png" alt="" />
+    <div class="p-1 border container-fluid bg-color animate fadeInRight four">
+      <section class="texto-principal text-center">
+        <img
+          src="./img/logo.png"
+          alt="Logo"
+          class="img-fluid mx-auto"
+          style="max-width: 200px"
+        />
       </section>
     </div>
 
     <br />
-    <!--Footer comienzo-->
-    <footer class="footer">
+    <!-- Footer -->
+    <footer class="footer bg-light text-dark py-4">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col">
+        <div class="row gy-4">
+          <div class="col-12 col-md-4 text-center">
             <div class="footer-brand"><u>Redes sociales</u></div>
             <div class="social-links">
-              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-              <a href="#" class="social-link"
+              <a href="#" class="social-link me-2"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="social-link me-2"
                 ><i class="fab fa-facebook"></i
               ></a>
-              <br />
-              <a href="#" class="social-link"
+              <a href="#" class="social-link me-2"
                 ><i class="fab fa-instagram"></i
               ></a>
               <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
             </div>
           </div>
-          <div class="col">
+
+          <div class="col-12 col-md-4 text-center">
             <div class="footer-brand"><u>Whatsapp</u></div>
             <div class="social-links">
               <a href="#" class="social-link">
-                <i class="fab fa-whatsapp">
-                  <h3>5555-5555</h3>
-                </i>
+                <i class="fab fa-whatsapp"></i>
+                <h5 class="d-inline">5555-5555</h5>
               </a>
             </div>
           </div>
-          <div class="col">
-            <div class="footer-brand"><u>Direccion</u></div>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15441.519985558463!2d-90.59764751284177!3d14.63435810000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a1495a330c1d%3A0x6a68e35b88e73342!2sSaving%20Animals%20Guatemala!5e0!3m2!1ses-419!2sgt!4v1743533078539!5m2!1ses-419!2sgt"
-              width="450"
-              height="90"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+
+          <div class="col-12 col-md-4 text-center">
+            <div class="footer-brand"><u>Dirección</u></div>
+            <div class="map-responsive">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=..."
+                width="100%"
+                height="100"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
         </div>
-        <div class="copyright text-center">
-          © 2025 Amigo Fiel. Tiene todos los derecho reservados.
+        <div class="scroll-up-container text-center mt-4">
+          <a href="#top" class="scroll-up-btn"
+            ><i class="fa fa-arrow-up"></i
+          ></a>
+        </div>
+        <div class="copyright text-center mt-3">
+          © 2025 Amigo Fiel. Tiene todos los derechos reservados.
         </div>
       </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
