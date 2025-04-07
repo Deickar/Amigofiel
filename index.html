@@ -1,132 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!--Metadatos-->
-        <meta charset="UTF-8"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Testimonios</title>
-<!--BootStrap-->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<!--íconos de bootstrap-->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-<!--CSS-->
-<link rel="stylesheet" href="style.css">
-<!--Google Fonts-->
-    </head>
-    <body>
-      <h1></h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Principal</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link href="./style.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<div class="main" id="section1">
-  <h2><i class="bi bi-house-door"></i></h2>
-  <a href="#section2">Inicio</a>
-</div>
-        <section>
-            <div class="container">
-              <div class="row-test row ">
-                <div class="col-1 text-center">
-                    <a class="icono-usuario" >
-                  <i class="bi bi-person"></i>
-                    </a>
-                </div>
-                <div class="col-7">
-                  <h4>Rodrigo Meza</h4>
-                  <p class="Testimonio-título">"La conexión fue instantánea e indescriptible; todos sabíamos que comprar un mascota era el ajuste perfecto". </p>
-                </div>
-                <a class="iconos-redes">
-                <div class="col-4 text-center" >
-              <i class="bi bi-heart"></i>
-              <i class="bi bi-share"></i>
-              <i class="bi bi-chat-left"></i>
-          </a>
-        
-                </div>
-              </div>
+  <body>
+    <!---Barra de navegacion-->
+    <nav class="navbar navbar-expand-lg navbar-scroll">
+      <div class="container">
+        <a href="./index.html"
+          ><img src="./img/logo.png" height="90" alt="" loading="lazy"
+        /></a>
+        <!--Menu hamburguesa--->
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!----->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html"
+                >Incio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./adopcion.html"
+                >Adopcion</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./formulario.html">
+                Formulario de adoptcións</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./testimonios.html"
+                >Testimonios</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./nosotros.html"
+                >Nosotros</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!---FInal de barra de navegacion-->
+    <!--Seccion principal de pagina web-->
+    <!---parrafo de bienvenidos-->
+    <br />
+    <div class="p-1 border container-fluid bg-color animate fadeInLeft three">
+      <div
+        class="texto-principal d-flex flex-column flex-md-row align-items-center gap-3"
+      >
+        <!-- Imagen -->
+        <div class="flex-shrink-0 text-center anumate fadeInLeft three">
+          <img
+            src="./img/pata.jpg"
+            alt="Mascota adorable"
+            class="img-fluid rounded"
+            style="max-width: 400px"
+          />
+        </div>
+
+        <!-- Texto -->
+        <section class="texto-principal">
+          <h3 class="text-center"><u>Bienvenidos a Amigo Fiel!</u> 🐾</h3>
+          <p class="lead">
+            En nuestro rincón de esperanza y segundas oportunidades, cada colita
+            que mueve y cada ronroneo suave tiene una historia que contar. Aquí,
+            los perros y gatos abandonados encuentran un refugio lleno de amor
+            mientras esperan a su familia ideal… ¡quizás esa seas tú! Creemos
+            que adoptar es un acto de amor y responsabilidad, pero también el
+            inicio de una amistad inquebrantable. Ya sea un cachorro juguetón,
+            un gato curioso o un peludo maduro lleno de sabiduría, cada uno
+            tiene algo único para ofrecer: lealtad, compañía y un corazón que
+            late con gratitud. ¿Listo para cambiar una vida? Explora nuestras
+            historias de patitas peludas, conoce a tus posibles compañeros y
+            descubre cómo un pequeño gesto puede llenar tu hogar de ronroneos,
+            lamidas y momentos inolvidables. Porque en Amigo Fiel, no solo
+            rescatamos mascotas… ¡rescatamos alegrías! Gracias por ser parte de
+            esta misión. Juntos, podemos escribir finales felices. 🐶❤️🐱
+            <br />
+            ¡Empieza tu búsqueda hoy y encuentra a tu
+            <a href="./testimonios.html">#AmigoFiel!</a>
+          </p>
+        </section>
+      </div>
+    </div>
+    <br />
+    <div class="p-1 border container-fluid bg-color animate fadeInLeft three">
+      <section class="texto-principal align-items-center text-center">
+        <img src="./img/logo.png" alt="" />
+      </section>
+    </div>
+
+    <br />
+    <!--Footer comienzo-->
+    <footer class="footer">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col">
+            <div class="footer-brand"><u>Redes sociales</u></div>
+            <div class="social-links">
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <br />
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
             </div>
-          </section>
-          <br>
-
-          <section>
-            <div class="container">
-              <div class="row-test row">
-                <div class="col-1 text-center">
-                    <a class="icono-usuario" >
-                  <i class="bi bi-person"></i>
-                    </a>
-                </div>
-                <div class="col-7">
-                  <h4>María Lorena</h4>
-                  <p class="Testimonio-título">"Mi gata Pinky era muy miedosa al principio, pero fue recibida con mucho amor y poco a poco fue adquiriendo seguridad, ahora es parte de la familia"</p>
-                </div>
-                <a class="iconos-redes">
-                <div class="col-4 text-center" >
-              <i class="bi bi-heart"></i>
-              <i class="bi bi-share"></i>
-              <i class="bi bi-chat-left"></i>
-          </a>
-        
-                </div>
-              </div>
+          </div>
+          <div class="col">
+            <div class="footer-brand"><u>Whatsapp</u></div>
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <i class="fab fa-whatsapp">
+                  <h3>5555-5555</h3>
+                </i>
+              </a>
             </div>
-          </section>
-          <br>
-
-          <section>
-            <div class="container">
-              <div class="row-test row">
-                <div class="col-1 text-center">
-                    <a class="icono-usuario" >
-                  <i class="bi bi-person"></i>
-                    </a>
-                </div>
-                <div class="col-7">
-                  <h4>María José López</h4>
-                  <p class="Testimonio-título">"Adoptar un perro nos sensibiliza ante la problemática de los perros callejeros y puede incentivarnos a apoyar económicamente a este tipo de causas"</p>
-                </div>
-                <a class="iconos-redes">
-                <div class="col-4 text-center" >
-              <i class="bi bi-heart"></i>
-              <i class="bi bi-share"></i>
-              <i class="bi bi-chat-left"></i>
-          </a>
-        
-                </div>
-              </div>
-            </div>
-          </section>
-          <br>
-
-
-          <section>
-            <div class="container">
-              <div class="row-test row">
-                <div class="col-1 text-center">
-                    <a class="icono-usuario" >
-                  <i class="bi bi-person"></i>
-                    </a>
-                </div>
-                <div class="col-7">
-                  <h4>Marcos Antonio Prado</h4>
-                  <p class="Testimonio-título">"Mi perro Charlie y mi gata Luna completaron a mi familia y nos llenaron de felicidad".</p>
-                </div>
-                <a class="iconos-redes">
-                <div class="col-4 text-center" >
-              <i class="bi bi-heart"></i>
-              <i class="bi bi-share"></i>
-              <i class="bi bi-chat-left"></i>
-          </a>
-        
-                </div>
-              </div>
-            </div>
-          </section>
-
-<div class="main" id="section2">
-  <h2><i class="bi bi-house-up-fill"></i></h2>
-  <a href="#section1">Regresar al Inicio</a>
-</div>
-
-
-
-
-    </body>
+          </div>
+          <div class="col">
+            <div class="footer-brand"><u>Direccion</u></div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15441.519985558463!2d-90.59764751284177!3d14.63435810000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a1495a330c1d%3A0x6a68e35b88e73342!2sSaving%20Animals%20Guatemala!5e0!3m2!1ses-419!2sgt!4v1743533078539!5m2!1ses-419!2sgt"
+              width="450"
+              height="90"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="copyright text-center">
+          © 2025 Amigo Fiel. Tiene todos los derecho reservados.
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
